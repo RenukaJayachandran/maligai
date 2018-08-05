@@ -1,0 +1,9 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div *ngFor = 'let s of shops'>
+  {{s.name}}
+  <div style="padding-left: 10px" *ngFor='let p of s.productsByshopId'>
+    <span>{{p.name}}</span>
+    <span>{{p.cost_price}}</span>
+  </div>
+</div>
+
